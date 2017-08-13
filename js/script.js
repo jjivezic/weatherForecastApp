@@ -45,7 +45,7 @@ function getWeatherOf10cityies(city) {
                 london.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 london.appendChild(img);
                 london.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                london.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                london.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'Belgrade') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -54,7 +54,7 @@ function getWeatherOf10cityies(city) {
                 belgrade.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 belgrade.appendChild(img);
                 belgrade.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                belgrade.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                belgrade.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'Paris') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -63,7 +63,7 @@ function getWeatherOf10cityies(city) {
                 paris.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 paris.appendChild(img);
                 paris.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + '</p> ');
-                paris.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                paris.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase()+ ' </p> ');
             }
             if (name == 'Rome') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -72,7 +72,7 @@ function getWeatherOf10cityies(city) {
                 rome.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 rome.appendChild(img);
                 rome.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + '</p> ');
-                rome.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                rome.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'Hong Kong') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -81,7 +81,7 @@ function getWeatherOf10cityies(city) {
                 hongKong.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 hongKong.appendChild(img);
                 hongKong.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                hongKong.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                hongKong.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'Istanbul') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -90,7 +90,7 @@ function getWeatherOf10cityies(city) {
                 istanbul.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 istanbul.appendChild(img);
                 istanbul.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                istanbul.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                istanbul.insertAdjacentHTML('beforeend', '<p class= "city-description">' +description.toUpperCase() + ' </p> ');
             }
             if (name == 'Madrid') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -99,7 +99,7 @@ function getWeatherOf10cityies(city) {
                 madrid.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 madrid.appendChild(img);
                 madrid.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                madrid.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                madrid.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'New York') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -108,7 +108,7 @@ function getWeatherOf10cityies(city) {
                 newYork.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 newYork.appendChild(img);
                 newYork.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                newYork.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                newYork.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'Mexico') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -117,7 +117,7 @@ function getWeatherOf10cityies(city) {
                 mexico.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 mexico.appendChild(img);
                 mexico.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                mexico.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                mexico.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
             if (name == 'Sydney') {
                 var imgIcon = data.weather[0].icon + '.png';
@@ -126,7 +126,7 @@ function getWeatherOf10cityies(city) {
                 sydney.insertAdjacentHTML('beforeend', '<h2 class= "city-name">' + name + ', ' + state + '</h2> ');
                 sydney.appendChild(img);
                 sydney.insertAdjacentHTML('beforeend', '<p class= "city-temp">' + mainTemp + '&#8451;' + ' </p> ');
-                sydney.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description + ' </p> ');
+                sydney.insertAdjacentHTML('beforeend', '<p class= "city-description">' + description.toUpperCase() + ' </p> ');
             }
 
         } else {
@@ -193,7 +193,7 @@ function getCurrentWeatherByCityName() {
             var kelvin = 273.15;
             var mainTempToCelsius = data.main.temp - kelvin;
             var mainTemp = mainTempToCelsius.toFixed(2);
-            var mainTempMinToCelsius = data.main.temp_min - kelvin ;
+            var mainTempMinToCelsius = data.main.temp_min - kelvin;
             var mainTempMin = mainTempMinToCelsius.toFixed(2);
             var mainTempMaxToCelsius = data.main.temp_max - kelvin;
             var mainTempMax = mainTempMaxToCelsius.toFixed(2);
@@ -233,7 +233,7 @@ function getCurrentWeatherByCityName() {
                 body.setAttribute('style', 'background:url("./img/fog.jpg")');
             }
 
-            inputCityValue = ' ';
+            inputCityValue = '';
         };
     }
     request.send();
