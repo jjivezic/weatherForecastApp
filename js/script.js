@@ -193,10 +193,10 @@ function getCurrentWeatherByCityName() {
             var kelvin = 273.15;
             var mainTempToCelsius = data.main.temp - kelvin;
             var mainTemp = mainTempToCelsius.toFixed(2);
-            var mainTempMinToCelsius = data.main.temp_min - kelvin + '&#8451;';
-            var mainTempMin = mainTempToCelsius.toFixed(2);
-            var mainTempMaxToCelsius = data.main.temp_max - kelvin + '&#8451;';
-            var mainTempMax = mainTempToCelsius.toFixed(2);
+            var mainTempMinToCelsius = data.main.temp_min - kelvin ;
+            var mainTempMin = mainTempMinToCelsius.toFixed(2);
+            var mainTempMaxToCelsius = data.main.temp_max - kelvin;
+            var mainTempMax = mainTempMaxToCelsius.toFixed(2);
             var main = data.weather[0].main;
             var description = data.weather[0].description;
 
@@ -298,10 +298,10 @@ function getWeatherOfCurrentLocation(latitude, longitude) {
             var kelvin = 273.15;
             var mainTempToCelsius = data.main.temp - kelvin;
             var mainTemp = mainTempToCelsius.toFixed(2);
-            var mainTempMinToCelsius = data.main.temp_min - kelvin + '&#8451;';
-            var mainTempMin = mainTempToCelsius.toFixed(2);
-            var mainTempMaxToCelsius = data.main.temp_max - kelvin + '&#8451;';
-            var mainTempMax = mainTempToCelsius.toFixed(2);
+            var mainTempMinToCelsius = data.main.temp_min - kelvin;
+            var mainTempMin = mainTempMinToCelsius.toFixed(2);
+            var mainTempMaxToCelsius = data.main.temp_max - kelvin;
+            var mainTempMax = mainTempMaxToCelsius.toFixed(2);
             var wind = data.wind.speed + 'km/h';
             var main = data.weather[0].main;
             var description = data.weather[0].description;
